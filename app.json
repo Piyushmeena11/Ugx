@@ -1,7 +1,7 @@
 {
   "name": "EXTRACTOR BOTS",
   "description": "Telegram Bot using Pyrogram",
-  "repository": "GAYAB HO GYI ",
+  "repository": "https://github.com/Piyushmeena11/Ugx.git",
   "env": {
     "API_ID": {
       "description": "",
