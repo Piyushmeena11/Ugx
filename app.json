@@ -1,0 +1,73 @@
+{
+  "name": "EXTRACTOR by ug",
+  "description": "𝑻𝒆𝒙𝒕 𝑽𝒊𝒅𝒆𝒐 𝑬𝒙𝒕𝒓𝒂𝒄𝒕𝒐𝒓 𝑭𝒐𝒓 𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎",
+  "repository": "https://github.com/Piyushmeena11/Ugx.git",
+
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝒑𝒊 𝑰𝑫",
+      "value": "27041528",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝒑𝒊 𝑯𝒂𝒔𝒉",
+      "value": "0a67358ebccb6a642778e3844f5da335",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑩𝒐𝒕 𝑻𝒐𝒌𝒆𝒏",
+      "value": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "𝙀𝙣𝙩𝙚𝙧 𝙔𝙤𝙪𝙧 𝙏𝙚𝙡𝙚𝙜𝙧𝙖𝙢 𝙄𝘿",
+      "value": "6763842898",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "secondary andmin",
+      "value": "6763842898",
+      "required": true
+    },
+    "BOT_USERNAME": {
+      "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑩𝒐𝒕 𝑻𝒐𝒌𝒆𝒏",
+      "value": "",
+      "required": true
+    },
+    "PREMIUM_LOGS": {
+      "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 Log channel id ",
+      "value": "",
+      "required": true
+    },
+    "MONGO_URL": {
+      "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 Mongo db",
+      "value": "",
+      "required": true
+    },
+    "CHANNEL_ID": {
+      "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 Channel id",
+      "value": "",
+      "required": true
+    },
+  },
+  "stack": "heroku-22",
+  "addons": [],
+  "buildpacks": [
+    {
+      "url": "https://github.com/amivin/aria2-heroku.git"
+    },
+    {
+      "url": "heroku/python"
+    },       
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "standard-2x"
+    }
+  }
+}
